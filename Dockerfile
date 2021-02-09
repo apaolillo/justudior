@@ -108,6 +108,9 @@ RUN apt-get update && apt-get install -y \
 RUN R -e "install.packages(c('repr', 'IRdisplay', 'IRkernel'), type = 'source')"
 RUN R -e "IRkernel::installspec(user = FALSE)"
 
+# R packages from the course
+RUN R -e 'install.packages("ISwR")'
+
 # TODO
 # wip: this is to add some shortcuts in Jupyter Notebook related to R
 # wip: wee need the right nodejs version..

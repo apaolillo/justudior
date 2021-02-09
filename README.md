@@ -14,6 +14,12 @@ Notice the name of the repo (and the tag of the Docker image) is `justudior`,
 a contraction of "Jupyter", "Studio" and "R", recalling the tools contained in
 the image.
 
+## Prerequisites
+
+The only prerequisites is to install Docker on a Linux machine.
+
+One can use instructions provided on Docker website: https://docs.docker.com/engine/install/
+
 ## Building the image and running the container
 
 Simply run the script located at the root of the repository:
