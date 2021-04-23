@@ -45,11 +45,14 @@ RUN apt-get update && apt-get install -y \
 
 # Jupyter kernel from source dependencies
 RUN apt-get update && apt-get install -y \
-    jupyter-client \
-    jupyter-core \
-    libcurl4-openssl-dev \
-    libssl-dev \
-    libzmq3-dev \
+        jupyter-client \
+        jupyter-core \
+        libcurl4-openssl-dev \
+        libssl-dev \
+        libzmq3-dev \
+        pandoc \
+        texlive-fonts-recommended \
+        texlive-xetex \
     && rm -rf /var/lib/apt/lists/*
 
 # Setting-up locale for rstudio server
