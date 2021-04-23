@@ -110,6 +110,7 @@ RUN R -e "IRkernel::installspec(user = FALSE)"
 
 # R packages from the course
 RUN R -e 'install.packages("ISwR")'
+RUN R -e 'install.packages("mvtnorm")'
 
 # TODO
 # wip: this is to add some shortcuts in Jupyter Notebook related to R
